@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/CyberDokdoMetaverse/AMulti/Offline.unity
+    guid: 3e89ad738258e054aa9f30c00c6d86f1
+  - enabled: 1
+    path: Assets/CyberDokdoMetaverse/AMulti/MLobby.unity
+    guid: 2581f2b0c3f005f4984ff879d7edd857
+  - enabled: 1
+    path: Assets/CyberDokdoMetaverse/AMulti/MGame.unity
+    guid: 70e707d75550930468e0ae45d3c3fba6
+  m_configObjects: {}
