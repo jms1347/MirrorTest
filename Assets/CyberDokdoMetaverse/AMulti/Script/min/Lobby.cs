@@ -16,7 +16,7 @@ public class Lobby : NetworkBehaviour
 
     private void Start()
     {
-        mirrorManager = GameObject.Find("MirrorManager").GetComponent<MirrorManager>();
+        //mirrorManager = GameObject.Find("MirrorManager").GetComponent<MirrorManager>();
     }
     public static void AddPlayer(NetworkConnection conn, Player player)
     {

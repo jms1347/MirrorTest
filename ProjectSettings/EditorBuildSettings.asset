@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/CyberDokdoMetaverse/AMulti/MGame.unity
     guid: 70e707d75550930468e0ae45d3c3fba6
+  - enabled: 1
+    path: Assets/CyberDokdoMetaverse/AMulti/Script/be/Lobby.unity
+    guid: 13d5b638bce6d56499c55d236c9afb0e
   m_configObjects: {}

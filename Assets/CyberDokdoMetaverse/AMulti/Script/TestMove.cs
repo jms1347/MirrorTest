@@ -5,8 +5,9 @@ using UnityEngine;
 using UnityEngine.AI;
 using Mirror;
 
-public class TestMove : MonoBehaviour
+public class TestMove : NetworkBehaviour
 {
+    [SyncVar]
     public float moveSpeed = 5f; // 플레이어 이동 속도
 
     private Rigidbody2D rb;
@@ -20,7 +21,21 @@ public class TestMove : MonoBehaviour
 
     void Update()
     {
-        if (a.isLocalPlayer)
+        //if (a.isLocalPlayer)
+        //{
+        //    float moveHorizontal = Input.GetAxis("Horizontal"); // 수평 입력 값
+        //    float moveVertical = Input.GetAxis("Vertical"); // 수직 입력 값
+
+        //    Vector2 movement = new Vector2(moveHorizontal, moveVertical);
+        //    rb.velocity = movement * moveSpeed;
+        //}
+
+        Move();
+    }
+
+    public void Move()
+    {
+        if (isOwned)
         {
             float moveHorizontal = Input.GetAxis("Horizontal"); // 수평 입력 값
             float moveVertical = Input.GetAxis("Vertical"); // 수직 입력 값
